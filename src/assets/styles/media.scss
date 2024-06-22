@@ -1,0 +1,147 @@
+@media screen and (max-width: 1140px) {
+    .main {
+        &__content {
+            gap: 20px;
+
+        }
+        &__week {
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+
+        }
+
+    }
+}
+@media screen and (max-width: 910px) {
+    .nav {
+        .logo {
+            img {
+                width: 40px;
+            }
+            &__span {
+                font-size: 20px;
+
+            }
+        }
+
+    }
+    .main {
+        &__content {
+            gap: 20px;
+            flex-direction: column;
+            &-left {
+                max-width: 910px;
+                width: 100%;
+
+            }
+            &-right {
+                max-width: 910px;
+                width: 100%;
+
+            }
+
+        }
+        &__week {
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            margin: 50px 0 0 0;
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .nav {
+        .logo {
+            img {
+                width: 30px;
+            }
+            &__span {
+                font-size: 18px;
+
+            }
+        }
+        &__search {
+            gap: 8px;
+            img {
+                width: 18px;
+            }
+            &-input {
+                height: 25px;
+                width: 150px;
+                font-size: 13px;
+
+            }
+        }
+
+    }
+    .main {
+        &__content {
+            gap: 20px;
+            flex-direction: column;
+            &-left {
+                max-width: 910px;
+                width: 100%;
+                &-img {
+                    width: 90px;
+                    img {
+                        width: 90px;
+                    }
+                }
+                &-degree {
+                    font-size: 55px;
+                }
+                &-today {
+                    font-size: 30px;
+                }
+                &-time {
+                    font-size: 20px;
+                    margin-top: -5px;
+                }
+                &-city {
+                    font-size: 20px;
+                    margin: 0;
+                }
+
+            }
+            &-right {
+                max-width: 910px;
+                width: 100%;
+                &-bg {
+                    width: 280px;
+                }
+                &-item {
+                    flex-direction: column;
+                    align-items: start;
+
+                    p {
+                        padding-left: 10px;
+                    }
+
+                }
+
+            }
+
+        }
+        &__week {
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            margin: 50px 0 0 0;
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 400px){
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 15px;
+        &__search {
+            border-top: 1px solid var(--border);
+            width: 100%;
+            justify-content: space-between;
+            padding: 15px 0px 0 0px;
+        }
+    }
+
+}
